@@ -1,0 +1,28 @@
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  .scrollbar-thumb-gray-400::-webkit-scrollbar-thumb {
+    background-color: #9ca3af; /* Gray 400 */
+    border-radius: 8px;
+  }
+
+  .scrollbar-track-gray-200::-webkit-scrollbar-track {
+    background-color: #e5e7eb; /* Gray 200 */
+  }
+
+  .dark .scrollbar-thumb-gray-600::-webkit-scrollbar-thumb {
+    background-color: #4b5563; /* Gray 600 */
+  }
+
+  .dark .scrollbar-track-gray-800::-webkit-scrollbar-track {
+    background-color: #1f2937; /* Gray 800 */
+  }
+
+  /* WebKit specific */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+}
